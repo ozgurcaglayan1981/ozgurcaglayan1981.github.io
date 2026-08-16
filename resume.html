@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ozgur Caglayan — Resume</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Fira+Code:wght@400..600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1c2430;
+    --muted: #5b6470;
+    --line: #dde1e6;
+    --accent: #6d43e0;
+    --bg: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #eceef1;
+    color: var(--ink);
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    max-width: 780px;
+    margin: 32px auto;
+    background: var(--bg);
+    padding: 56px 60px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  }
+  header.resume-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 20px;
+    margin-bottom: 24px;
+  }
+  h1 { font-size: 1.9rem; margin: 0 0 6px; letter-spacing: -0.01em; }
+  .role { font-size: 0.98rem; color: var(--accent); font-weight: 600; margin: 0 0 4px; }
+  .location { font-size: 0.85rem; color: var(--muted); margin: 0; }
+  .contact-block {
+    text-align: right;
+    font-size: 0.82rem;
+    color: var(--muted);
+    line-height: 1.7;
+    white-space: nowrap;
+  }
+  .contact-block a { color: var(--muted); text-decoration: none; }
+  .contact-block a:hover { color: var(--accent); }
+
+  section { margin-bottom: 26px; }
+  h2 {
+    font-family: "Fira Code", monospace;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    margin: 0 0 12px;
+  }
+  .summary { font-size: 0.92rem; color: #333; margin: 0; }
+
+  .entry { margin-bottom: 16px; }
+  .entry:last-child { margin-bottom: 0; }
+  .entry-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .entry-title { font-size: 0.96rem; font-weight: 700; margin: 0; }
+  .entry-date { font-size: 0.78rem; color: var(--muted); font-family: "Fira Code", monospace; white-space: nowrap; }
+  .entry-company { font-size: 0.85rem; color: var(--accent); font-weight: 600; margin: 2px 0 6px; }
+  .entry ul { margin: 0; padding-left: 18px; }
+  .entry li { font-size: 0.87rem; color: #333; margin-bottom: 3px; }
+
+  .skills-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+  .skill-pill {
+    font-size: 0.78rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 5px 12px;
+    color: #333;
+  }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .cert-item, .writing-item { font-size: 0.87rem; margin-bottom: 8px; }
+  .writing-item a { color: var(--accent); text-decoration: none; }
+  .writing-item a:hover { text-decoration: underline; }
+
+  .print-hint {
+    max-width: 780px;
+    margin: 0 auto 8px;
+    padding: 0 4px;
+    font-size: 0.82rem;
+    color: #667;
+    font-family: "Inter", sans-serif;
+  }
+
+  @media print {
+    body { background: #fff; }
+    .page { box-shadow: none; margin: 0; padding: 0; }
+    .print-hint { display: none; }
+  }
+
+  @media (max-width: 620px) {
+    .page { padding: 32px 24px; }
+    header.resume-head { flex-direction: column; }
+    .contact-block { text-align: left; }
+    .two-col { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+  <p class="print-hint">Tip: Ctrl/Cmd+P → "Save as PDF" to export this as <code>assets/resume.pdf</code>.</p>
+
+  <div class="page">
+    <header class="resume-head">
+      <div>
+        <h1>Ozgur Caglayan</h1>
+        <p class="role">Data Scientist | Healthcare Data & Clinical NLP | Medical Coding Systems</p>
+        <p class="location">Gaziantep, Türkiye</p>
+      </div>
+      <div class="contact-block">
+        <div>caglayanozgur1981@gmail.com</div>
+        <div><a href="https://www.linkedin.com/in/ozgurcaglayan1981" target="_blank" rel="noopener noreferrer">linkedin.com/in/ozgurcaglayan1981</a></div>
+        <div><a href="https://github.com/ozgurcaglayan1981" target="_blank" rel="noopener noreferrer">github.com/ozgurcaglayan1981</a></div>
+        <div><a href="https://medium.com/@caglayanozgur1981" target="_blank" rel="noopener noreferrer">medium.com/@caglayanozgur1981</a></div>
+      </div>
+    </header>
+
+    <section>
+      <h2>Summary</h2>
+      <p class="summary">I'm a Data Scientist working in the healthcare space, mainly around clinical NLP and structured medical data. I enjoy taking messy, complex clinical information and turning it into something clear, usable, and meaningful. Most of my work revolves around building data pipelines and ML systems using Python, SQL, Databricks, and cloud tools. A big part of my interest is clinical coding systems like SNOMED CT and ICD, and how we can make medical data talk the same language across systems. For me, the most exciting part is working on problems where data actually connects to real human impact.</p>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+
+      <div class="entry">
+        <div class="entry-top">
+          <p class="entry-title">Models Hub Team Lead</p>
+          <span class="entry-date">Feb 2026 – Present</span>
+        </div>
+        <p class="entry-company">John Snow Labs</p>
+        <ul>
+          <li>Collaborated with cross-functional teams to translate healthcare data into production-ready solutions.</li>
+          <li>Built and maintained scalable data pipelines using Python, SQL, and Databricks for processing large-scale structured and unstructured healthcare data.</li>
+          <li>Developed machine learning / NLP workflows for extracting insights from clinical datasets.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-top">
+          <p class="entry-title">Data Scientist</p>
+          <span class="entry-date">Nov 2025 – Feb 2026</span>
+        </div>
+        <p class="entry-company">John Snow Labs</p>
+        <ul>
+          <li>Worked on clinical coding and interoperability challenges (SNOMED CT, ICD mapping, structured medical data representation).</li>
+          <li>Improved data quality and consistency for downstream analytics and ML use cases.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-top">
+          <p class="entry-title">Data Scientist — Python | Web Scraping | Automation | ML | DL</p>
+          <span class="entry-date">Mar 2020 – Sep 2025</span>
+        </div>
+        <p class="entry-company">Self-Employed</p>
+        <ul>
+          <li>Worked on a variety of freelance software projects, focusing on practical data-driven and automation-based solutions.</li>
+          <li>Developed Python-based tools and scripts for data processing, automation, and web scraping tailored to client needs.</li>
+          <li>Designed and implemented lightweight applications and backend logic to support data workflows and business processes.</li>
+          <li>Built and maintained data pipelines and integrations across different systems depending on project requirements.</li>
+          <li>Translated loosely defined client ideas into structured technical solutions, from prototype to working implementation.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-top">
+          <p class="entry-title">Data Scientist</p>
+          <span class="entry-date">Dec 2018 – Mar 2020</span>
+        </div>
+        <p class="entry-company">yDataLabs</p>
+        <ul>
+          <li>Built end-to-end data workflows using Python and SQL, with a strong emphasis on collecting and structuring data from various web sources.</li>
+          <li>Developed and maintained scraping systems to gather large volumes of data, then cleaned and organized it for analysis.</li>
+          <li>Applied machine learning techniques on collected datasets to explore patterns, trends, and predictive signals.</li>
+          <li>Built feature sets and prepared training data to support ML experiments and iterative model improvements.</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="two-col">
+      <section>
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <span class="skill-pill">Amazon Web Services (AWS)</span>
+          <span class="skill-pill">Natural Language Processing (NLP)</span>
+          <span class="skill-pill">Structured Medical Data</span>
+          <span class="skill-pill">Python</span>
+          <span class="skill-pill">SQL</span>
+          <span class="skill-pill">Databricks</span>
+          <span class="skill-pill">Machine Learning</span>
+          <span class="skill-pill">SNOMED CT / ICD</span>
+          <span class="skill-pill">Web Scraping & Automation</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>Certifications</h2>
+        <div class="cert-item">AWS Partner: Technical Accredited — Training Badge</div>
+      </section>
+    </div>
+
+    <section>
+      <h2>Writing</h2>
+      <div class="writing-item">
+        <a href="https://medium.com/john-snow-labs/clinical-de-identification-at-scale-pipeline-design-and-speed-accuracy-trade-offs-across-d77a4bbae6e0" target="_blank" rel="noopener noreferrer">Clinical De-Identification at Scale: Pipeline Design and Speed–Accuracy Trade-offs Across Infrastructures</a> — John Snow Labs / Medium
+      </div>
+      <div class="writing-item">
+        <a href="https://medium.com/@caglayanozgur1981/from-doctor-notes-to-structured-data-the-hidden-pipeline-of-healthcare-systems-ee1c55fd427a" target="_blank" rel="noopener noreferrer">From Doctor Notes to Structured Data: The Hidden Pipeline of Healthcare Systems</a> — Medium
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>
